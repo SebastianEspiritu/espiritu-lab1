@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 1 | Inicio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: #1f2937;
+            background: #f9fafb;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 8%;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid #e5e7eb;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #4f46e5;
+        }
+
+        nav a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: #374151;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #4f46e5;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 7rem 8% 5rem;
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #a855f7 100%);
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            max-width: 800px;
+            margin: 0 auto 1rem;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            opacity: 0.9;
+            max-width: 640px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.9rem 2.2rem;
+            border-radius: 999px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-primary {
+            background: #fff;
+            color: #4f46e5;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            padding: 5rem 8%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 14px rgba(17, 24, 39, 0.06);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(17, 24, 39, 0.12);
+        }
+
+        .card .icon {
+            font-size: 2rem;
+        }
+
+        .card h3 {
+            margin: 1rem 0 0.5rem;
+            font-size: 1.15rem;
+        }
+
+        .card p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #9ca3af;
+            font-size: 0.9rem;
+            border-top: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Sesión 1</div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#caracteristicas">Características</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <h1>Bienvenido a nuestra primera página con Django</h1>
+        <p>Un landing page construido con Django 6 como proyecto de la primera sesión de laboratorio.</p>
+        <a href="#caracteristicas" class="btn btn-primary">Explorar</a>
+    </section>
+
+    <section class="features" id="caracteristicas">
+        <div class="card">
+            <div class="icon">⚡</div>
+            <h3>Rápido</h3>
+            <p>Servido por el servidor de desarrollo de Django con recarga automática.</p>
+        </div>
+        <div class="card">
+            <div class="icon">🎨</div>
+            <h3>Plantillas</h3>
+            <p>HTML y CSS en un template de Django, listo para personalizar.</p>
+        </div>
+        <div class="card">
+            <div class="icon">🚀</div>
+            <h3>Escalable</h3>
+            <p>Estructura base para agregar más aplicaciones al proyecto.</p>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <p>Sesión 1 · Proyecto de laboratorio · Django 6</p>
+    </footer>
+</body>
+</html>
