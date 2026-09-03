@@ -69,23 +69,26 @@
             margin: 0 auto 2.5rem;
         }
 
-        .btn {
+        /* Botón llamativo para la Veterinaria */
+        .btn-veterinaria {
             display: inline-block;
-            padding: 0.9rem 2.2rem;
-            border-radius: 999px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .btn-primary {
-            background: #fff;
+            background-color: #ffffff;
             color: #4f46e5;
+            font-size: 1.2rem;
+            font-weight: 800;
+            padding: 1.1rem 2.8rem;
+            border-radius: 999px;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
         }
 
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+        .btn-veterinaria:hover {
+            transform: translateY(-5px) scale(1.05);
+            background-color: #f3e8ff;
+            color: #3730a3;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
         }
 
         .features {
@@ -139,14 +142,18 @@
         <nav>
             <a href="#inicio">Inicio</a>
             <a href="#caracteristicas">Características</a>
+            <a href="/veterinaria/">Veterinaria</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
     <section class="hero" id="inicio">
         <h1>Bienvenido a nuestra primera página con Django</h1>
-        <p>Un landing page construido con Django 6 como proyecto de la primera sesión de laboratorio.</p>
-        <a href="#caracteristicas" class="btn btn-primary">Explorar</a>
+        <p>Haga clic para ver la sección de "Ir a Veterinaria" realizada para el laboratorio 02.</p>
+        
+        <a href="/veterinaria/" class="btn-veterinaria">
+            🐾 Ir a Veterinaria ➔
+        </a>
     </section>
 
     <section class="features" id="caracteristicas">
@@ -169,6 +176,7 @@
 
     <footer id="contacto">
         <p>Sesión 1 · Proyecto de laboratorio · Django 6</p>
+        <p>Sesión 2 · Proyecto de laboratorio · Django 6</p>
     </footer>
 </body>
 </html>
